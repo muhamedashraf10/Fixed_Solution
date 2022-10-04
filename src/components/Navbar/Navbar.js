@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, NavLink, useParams } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import Styles from "./Navbar.module.css";
 
 const Navbar = () => {
@@ -8,20 +8,22 @@ const Navbar = () => {
   return (
     <nav className={Styles.navbar}>
       <div className={Styles.title}>
-        <Link to={"/"}>
+        <NavLink to={"/"}>
           <h1>
             FIXED<span>solution</span>
           </h1>
-        </Link>
+        </NavLink>
       </div>
       <div className={Styles.linkNav}>
         <ul className={Styles.navlist}>
           <li>
             <NavLink
-              to="/home"
-              style={({ isActive }) => {
-                return { color: isActive ? "#f8633b" : "#93a4b6" };
-              }}
+              exact
+              activeClassName={Styles.active}
+              to="/"
+              // style={({ isActive }) => {
+              //   return { color: isActive ? "#f8633b" : "#93a4b6" };
+              // }}
             >
               Home
             </NavLink>
@@ -29,9 +31,11 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/posts"
-              style={({ isActive }) => {
-                return { color: isActive ? "#f8633b" : "#93a4b6" };
-              }}
+              activeClassName={Styles.active}
+
+              // style={({ isActive }) => {
+              //   return { color: isActive ? "#f8633b" : "#93a4b6" };
+              // }}
             >
               Posts
             </NavLink>
@@ -39,9 +43,11 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/about"
-              style={({ isActive }) => {
-                return { color: isActive ? "#f8633b" : "#93a4b6" };
-              }}
+              activeClassName={Styles.active}
+
+              // style={({ isActive }) => {
+              //   return { color: isActive ? "#f8633b" : "#93a4b6" };
+              // }}
             >
               About
             </NavLink>
