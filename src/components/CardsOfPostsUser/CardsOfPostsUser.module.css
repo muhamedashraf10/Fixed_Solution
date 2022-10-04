@@ -1,7 +1,7 @@
 .posts {
   display: grid;
   grid-template-columns: auto;
-  gap: 2rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -17,7 +17,7 @@
   width: 28rem;
   border-radius: 1.8rem;
   padding: 1rem 2rem;
-  box-shadow: 0 10px 25px rgba(255, 250, 248, 0.2);
+  box-shadow: 0 10px 25px rgba(134, 133, 132, 0.282);
 }
 .icon {
   color: var(--color-primary);
