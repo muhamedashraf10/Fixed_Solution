@@ -19,7 +19,7 @@ const Cards = ({ users }) => {
             <HiMenuAlt1 className={Styles.menu} />
             <AiFillSetting className={Styles.setting} />
           </div>
-          <img src={`./images/${users.id}.png`} alt="aa" />
+          <img src={`./images/${users.id}.png`} alt="Users Profile" />
           <h3>{users.name}</h3>
           <p>{users.username}</p>
         </div>
