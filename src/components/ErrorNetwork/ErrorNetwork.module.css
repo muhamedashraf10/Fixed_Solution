@@ -1,0 +1,18 @@
+.errorNeywork {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.errorNeywork img {
+  width: 10rem;
+  height: 10rem;
+  margin-bottom: 3rem;
+}
+.errorNeywork h3 {
+  text-align: center;
+  color: #f32013;
+  font-size: 1.3rem;
+}

@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./pages/Home/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Posts from "./pages/Posts/Posts";
+import NotFound from "./pages/NotFound/NotFound";
+import Navbar from "./components/Navbar/Navbar";
+import About from "./pages/About/About";
+import { QueryClient, QueryClientProvider } from "react-query";
+import Footer from "./components/Footer/Footer";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="post/:id" element={<Posts />} />
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </QueryClientProvider>
   );
 }
 

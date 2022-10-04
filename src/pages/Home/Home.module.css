@@ -1,0 +1,32 @@
+.Home {
+  margin-top: 2rem;
+}
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+.Users {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  width: var(--contanier-width-lg);
+  /* margin: 0 auto 3rem; */
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) {
+  .Users {
+    grid-template-columns: repeat(2, 1fr);
+    width: var(--contanier-width-md);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Users {
+    grid-template-columns: 1fr;
+    width: var(--contanier-width-sm);
+  }
+}

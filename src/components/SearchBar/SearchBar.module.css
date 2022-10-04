@@ -1,0 +1,29 @@
+.form {
+  width: 35rem;
+}
+
+.form input {
+  width: 100%;
+  caret-color: var(--color-primary);
+  height: 2.4rem;
+  border-radius: 1.8rem;
+  padding: 1rem;
+  transition: all 200ms ease;
+  background-color: var(--color-nav);
+  color: var(--color-white);
+}
+
+.form input::placeholder {
+  color: var(--color-gray);
+}
+.form input[type="text"]:focus {
+  border: 3px solid var(--color-primary);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 600px) {
+  .form {
+    width: 20rem;
+  }
+}

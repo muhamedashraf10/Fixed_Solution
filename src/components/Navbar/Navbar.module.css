@@ -1,0 +1,55 @@
+.navbar {
+  background-color: var(--color-nav);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8rem;
+}
+
+.navbar h1 {
+  color: var(--color-primary);
+}
+
+.navbar span {
+  color: var(--color-gray);
+}
+.navlist {
+  display: flex;
+}
+.navlist li {
+  margin-inline: 1.75rem;
+}
+.navlist li a {
+  display: block;
+  color: var(--color-gray);
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    padding: 1rem 3rem;
+  }
+  .navlist li {
+    margin-inline: 1.75rem;
+  }
+  .navbar h1 {
+    font-size: 1.4rem;
+  }
+  .navlist li a {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    padding: 1rem 0.8rem;
+  }
+  .navlist li {
+    margin-inline: 0.4rem;
+  }
+  .navbar h1 {
+    font-size: 1.1rem;
+  }
+  .navlist li a {
+    font-size: 0.8rem;
+  }
+}
