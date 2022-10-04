@@ -28,7 +28,7 @@ const Home = () => {
     return data;
   }
 
-  const { data, isLoading, isError, error } = useQuery("users", fetchUsers);
+  const { isLoading, isError, error } = useQuery("users", fetchUsers);
 
   if (isLoading) {
     return (

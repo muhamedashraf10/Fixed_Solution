@@ -19,7 +19,7 @@
   padding: 1rem 2rem;
   box-shadow: 0 10px 25px rgba(134, 133, 132, 0.282);
 }
-.icon {
+.iconMenu {
   color: var(--color-primary);
   font-size: 1.6rem;
   display: flex;
@@ -60,10 +60,19 @@
   cursor: pointer;
   transition: var(--transition);
   margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cardContent button:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+.iconArrow {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-left: 0.4rem;
 }
 
 .moreCardBody {
