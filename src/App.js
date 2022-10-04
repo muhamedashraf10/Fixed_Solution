@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import About from "./pages/About/About";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Footer from "./components/Footer/Footer";
+import ButtonToScrollUp from "./components/ButtonToScrollUp/ButtonToScrollUp";
 
 const queryClient = new QueryClient();
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
+        <ButtonToScrollUp />
       </Router>
     </QueryClientProvider>
   );

@@ -41,14 +41,16 @@ const Posts = () => {
     );
   }
 
-  const filterPost = posts?.filter((el) => el.userId === +id);
-
   return (
     <section>
       <h5>Posts Of</h5>
       <h2>{user.name}</h2>
       <div className="container">
-        <CardsOfPostsUser posts={filterPost} user={user} />
+        {posts
+          ?.filter((el) => el.userId === +id)
+          .map((post) => (
+            <CardsOfPostsUser posts={post} key={post.id} user={user} />
+          ))}
       </div>
     </section>
   );
