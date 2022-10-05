@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
+
+// css module
 import Styles from "./Navbar.module.css";
+
+// icon
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {

@@ -1,12 +1,20 @@
 import React, { useState } from "react";
-import Cards from "../../components/Cards/Cards";
+
+// instance axios
+import { INSTANCE } from "../../InstanceAxios";
+
+// react query
+import { useQuery } from "react-query";
+
+// css module
 import Styles from "./Home.module.css";
+
+// components
 import SearchBar from "../../components/SearchBar/SearchBar";
 import SearchNotFound from "../../components/SearchNotFound/SearchNotFound";
-import { useQuery } from "react-query";
-import { INSTANCE } from "../../InstanceAxios";
 import Spinner from "../../components/Spinner/Spinner";
 import ErrorNetwork from "../../components/ErrorNetwork/ErrorNetwork";
+import CardsOfUsers from "../../components/CardsOfUsers/CardsOfUsers";
 
 const Home = () => {
   const [users, setUsers] = useState([]);
@@ -62,7 +70,7 @@ const Home = () => {
         ) : (
           <div className={`${Styles.Users} container`}>
             {users.map((user) => (
-              <Cards users={user} key={user.id} />
+              <CardsOfUsers users={user} key={user.id} />
             ))}
           </div>
         )}

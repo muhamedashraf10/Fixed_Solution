@@ -15,6 +15,7 @@ const Posts = () => {
     isLoading: isLoadingPosts,
     error: errorPosts,
   } = useGetPosts();
+
   const {
     data: user,
     isError: isErrorUser,

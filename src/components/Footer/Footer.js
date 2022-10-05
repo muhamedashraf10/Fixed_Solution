@@ -1,8 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+// css module
+import Styles from "./Footer.module.css";
+
+// icon
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { FiInstagram, FiGithub, FiYoutube } from "react-icons/fi";
-import { Link } from "react-router-dom";
-import Styles from "./Footer.module.css";
 
 const Footer = () => {
   return (

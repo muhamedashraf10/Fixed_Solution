@@ -4,7 +4,6 @@ import Styles from "./SearchBar.module.css";
 const SearchBar = ({ searchFilter }) => {
   return (
     <form className={Styles.form}>
-      <label htmlFor=""></label>
       <input
         type="text"
         placeholder="Search By Name "

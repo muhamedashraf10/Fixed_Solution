@@ -4,6 +4,7 @@ import Styles from "./NotFound.module.css";
 
 const NotFound = () => {
   const navigate = useNavigate();
+
   return (
     <section className={Styles.notfound}>
       <h2>Oops!</h2>

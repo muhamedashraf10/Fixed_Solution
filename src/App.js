@@ -1,10 +1,15 @@
-import Home from "./pages/Home/Home";
+// react router dom
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+// react query
+import { QueryClient, QueryClientProvider } from "react-query";
+
+// pages and componant
+import Home from "./pages/Home/Home";
 import Posts from "./pages/Posts/Posts";
+import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
-import About from "./pages/About/About";
-import { QueryClient, QueryClientProvider } from "react-query";
 import Footer from "./components/Footer/Footer";
 import ButtonToScrollUp from "./components/ButtonToScrollUp/ButtonToScrollUp";
 
@@ -17,7 +22,6 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/home" element={<Home />} /> */}
           <Route path="post/:id" element={<Posts />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} />

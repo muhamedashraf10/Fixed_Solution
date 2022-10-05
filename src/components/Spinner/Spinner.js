@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "./Spinner.module.css";
 
-const Spinner = ({ img }) => {
+const Spinner = () => {
   return (
     <div className={Styles.spinner}>
       <img src="../images/833.gif" alt="Loading..." />

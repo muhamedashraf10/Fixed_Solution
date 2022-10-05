@@ -1,12 +1,13 @@
 import React, { useState } from "react";
+
+// css module
 import Styles from "./CardsOfPostsUser.module.css";
+
+// icon
 import { BsThreeDots, BsArrowUp, BsArrowDown } from "react-icons/bs";
-// import useCollapse from "react-collapsed";
 
 const CardsOfPostsUser = ({ posts, user }) => {
   const [isExpanded, setExpanded] = useState(false);
-  // const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded });
-  // {...getCollapseProps()}
 
   return (
     <article className={Styles.posts}>
@@ -30,9 +31,6 @@ const CardsOfPostsUser = ({ posts, user }) => {
 
           <button
             onClick={() => setExpanded(!isExpanded)}
-            // {...getToggleProps({
-            //   onClick: () => setExpanded((prevExpanded) => !prevExpanded),
-            // })}
             className={Styles.bttn}
           >
             {isExpanded ? "Read Less" : "Read More"}

@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
+
+// css module
 import Styles from "./ButtonToScrollUp.module.css";
 
+// icon
 import { FaArrowUp } from "react-icons/fa";
 
 const ButtonToScrollUp = () => {
@@ -15,7 +18,6 @@ const ButtonToScrollUp = () => {
       }
     });
   }, []);
-  console.log(backToTop, "aaaaaaaaaaaaaaaaaaaaaaaaaaa");
 
   const scrollUp = () => {
     window.scrollTo({
@@ -23,6 +25,7 @@ const ButtonToScrollUp = () => {
       behavior: "smooth",
     });
   };
+
   return (
     <div className={Styles.scrollToUpBtton}>
       {backToTop && (
