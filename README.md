@@ -9,10 +9,10 @@
 ## Detatils about My Task
 
 1. Structure
-  - Folder Pages : Each page contains two files javascript and css module
-  - Folder Components : Each component contains two files javascript and css module
-  - Folder Hooks : it contains useQuery
-  - File InstanceAxios : it contains axios instance
+   - Folder Pages : Each page contains two files javascript and css module
+   - Folder Components : Each component contains two files javascript and css module
+   - Folder Hooks : it contains useQuery
+   - File InstanceAxios : it contains axios instance
 
 2. Home page has all the users as cards in a grid view of three columns Every User card should show the required data in the Task.
 3. When clicking on Posts Button should route to the Posts page of this user and list all his posts as accordion in a grid view of one column.
