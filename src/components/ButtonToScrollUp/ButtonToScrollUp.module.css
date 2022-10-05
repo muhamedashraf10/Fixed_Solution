@@ -1,4 +1,4 @@
-.buttonUp {
+.button_Up {
   position: fixed;
   bottom: 50px;
   left: 95%;
@@ -16,7 +16,7 @@
 /* Responsive */
 
 @media screen and (max-width: 1024px) {
-  .buttonUp {
+  .button_Up {
     left: 93.5%;
   }
 }

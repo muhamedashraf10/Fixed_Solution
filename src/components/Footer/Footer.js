@@ -11,7 +11,7 @@ import { FiInstagram, FiGithub, FiYoutube } from "react-icons/fi";
 const Footer = () => {
   return (
     <footer>
-      <Link to="/" className={Styles.footerlogo}>
+      <Link to="/" className={Styles.footer_logo}>
         FIXED<span>solution</span>
       </Link>
 
@@ -40,7 +40,7 @@ const Footer = () => {
           <a href="/contact">Contact</a>
         </li>
       </ul>
-      <div className={Styles.footersocial}>
+      <div className={Styles.footer_social}>
         <a href="https://www.facebook.com/elmagik.toshka" target="blank">
           <FaFacebookF />
         </a>

@@ -18,7 +18,7 @@ const CardsOfUsers = ({ users }) => {
   return (
     <article className={`${Styles.cards} container`}>
       <div className={Styles.card}>
-        <div className={Styles.contentInfo}>
+        <div className={Styles.content_Info}>
           <div className={Styles.icons}>
             <HiMenuAlt1 className={Styles.menu} />
             <AiFillSetting className={Styles.setting} />
@@ -33,7 +33,7 @@ const CardsOfUsers = ({ users }) => {
         >
           POSTS
         </button>
-        <div className={Styles.cardFooter}>
+        <div className={Styles.card_Footer}>
           <p>
             <BsFillPhoneFill className={Styles.icon} /> {users.phone}
           </p>

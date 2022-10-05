@@ -1,30 +1,30 @@
-.notfound {
+.Not_found {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.notfound h2 {
+.Not_found h2 {
   font-size: 6rem;
   font-weight: bold;
   margin-bottom: 0.8rem;
 }
-.notfound img {
+.Not_found img {
   width: 25rem;
   height: 18rem;
   margin-bottom: 1rem;
 }
-.notfound h3 {
+.Not_found h3 {
   color: var(--color-gray);
   font-size: 1.5rem;
 }
-.notfound h4 {
+.Not_found h4 {
   color: var(--color-light);
   font-size: 1rem;
   margin: 1rem 0 1.5rem;
 }
-.notfound button {
+.Not_found button {
   cursor: pointer;
   background-color: transparent;
   border: 1px solid var(--color-primary);
@@ -36,7 +36,7 @@
   transition: var(--transition);
   margin-top: 1rem;
 }
-.notfound button:hover {
+.Not_found button:hover {
   background-color: var(--color-primary);
   color: var(--color-white);
   transform: scale(1.05);
@@ -48,24 +48,24 @@
 }
 
 @media screen and (max-width: 600px) {
-  .notfound {
+  .Not_found {
     margin-top: 8rem;
   }
-  .notfound h2 {
+  .Not_found h2 {
     font-size: 4rem;
   }
-  .notfound img {
+  .Not_found img {
     width: 18rem;
     height: 15rem;
   }
-  .notfound h3 {
+  .Not_found h3 {
     font-size: 1rem;
   }
-  .notfound h4 {
+  .Not_found h4 {
     text-align: center;
     font-size: 0.8rem;
   }
-  .notfound button {
+  .Not_found button {
     padding: 1rem 1.8rem;
     background-color: var(--color-white);
   }

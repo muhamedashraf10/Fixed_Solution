@@ -9,14 +9,14 @@ footer {
 footer a {
   color: var(--color-gray);
 }
-.footerlogo {
+.footer_logo {
   font-size: 2rem;
   font-weight: 500;
   margin-bottom: 2rem;
   display: inline-block;
   color: var(--color-primary);
 }
-.footerlogo span {
+.footer_logo span {
   color: var(--color-gray);
   font-size: 1.8rem;
 }
@@ -30,13 +30,13 @@ footer a {
 .links a:hover {
   color: var(--color-primary);
 }
-.footersocial {
+.footer_social {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin: 4rem;
 }
-.footersocial a {
+.footer_social a {
   background-color: var(--color-primary);
   color: var(--color-white);
   padding: 0.8rem;
@@ -44,7 +44,7 @@ footer a {
   display: flex;
   border: 1px solid transparent;
 }
-.footersocial a:hover {
+.footer_social a:hover {
   background-color: transparent;
   color: var(--color-primary);
   border-color: var(--color-primary);
@@ -63,7 +63,7 @@ footer a {
     flex-direction: column;
     gap: 1.5rem;
   }
-  .footersocial {
+  .footer_social {
     margin-bottom: 2.6rem;
   }
 }

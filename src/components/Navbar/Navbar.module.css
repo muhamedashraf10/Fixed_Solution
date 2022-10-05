@@ -13,24 +13,24 @@
 .navbar span {
   color: var(--color-gray);
 }
-.navlist,
-.navlistNone {
+.nav_list,
+.nav_list_None {
   display: flex;
 }
-.navlist li,
-.navlistNone li {
+.nav_list li,
+.nav_list_None li {
   margin-inline: 1.75rem;
 }
-.navlist li a,
-.navlistNone li a {
+.nav_list li a,
+.nav_list_None li a {
   display: block;
   color: var(--color-gray);
 }
-.navlist .active,
-.navlistNone .active {
+.nav_list .active,
+.nav_list_None .active {
   color: var(--color-primary);
 }
-.hamburgerMenu {
+.hamburger_Menu {
   display: none;
   position: absolute;
   top: 20px;
@@ -43,15 +43,15 @@
   .navbar {
     padding: 1rem 3rem;
   }
-  .navlist li,
-  .navlistNone li {
+  .nav_list li,
+  .nav_list_None li {
     margin-inline: 1.75rem;
   }
   .navbar h1 {
     font-size: 1.4rem;
   }
-  .navlist li a,
-  .navlistNone li a {
+  .nav_list li a,
+  .nav_list_None li a {
     font-size: 0.9rem;
   }
 }
@@ -62,29 +62,29 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .navlist {
+  .nav_list {
     flex-direction: column;
   }
-  .linkNav {
+  .link_Nav {
     width: 100%;
   }
-  .hamburgerMenu {
+  .hamburger_Menu {
     display: block;
     color: var(--color-gray);
     font-size: x-large;
     cursor: pointer;
   }
-  .navlist li {
+  .nav_list li {
     margin: 0.8rem 0 0.4rem 0;
     padding: 0.6rem 0;
   }
-  .navlist li:hover {
+  .nav_list li:hover {
     background-color: var(--color-bg);
   }
-  .navlist li a {
+  .nav_list li a {
     text-align: center;
   }
-  .navlistNone {
+  .nav_list_None {
     display: none;
   }
 }

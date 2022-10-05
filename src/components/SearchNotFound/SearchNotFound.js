@@ -3,7 +3,7 @@ import Styles from "./SearchNotFound.module.css";
 
 const SearchNotFound = () => {
   return (
-    <article className={Styles.searchNotFound}>
+    <article className={Styles.search_Not_Found}>
       <img
         src="https://cdn-icons-png.flaticon.com/512/6195/6195678.png"
         alt="No Result"

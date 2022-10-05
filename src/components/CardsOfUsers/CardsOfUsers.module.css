@@ -13,7 +13,7 @@
   color: var(--color-white);
   border-radius: 20px;
 }
-.contentInfo {
+.content_Info {
   margin-bottom: 20px;
 }
 .icons {
@@ -30,7 +30,7 @@
   background-color: var(--color-white);
   padding: 6px;
 }
-.cardFooter {
+.card_Footer {
   background-color: var(--color-white);
   color: var(--color-gray);
   padding: 40px 0;
@@ -47,7 +47,7 @@
   font-weight: 600;
   font-size: 1rem;
 }
-.cardFooter p {
+.card_Footer p {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@
   margin-right: 0.5rem;
   font-size: 1.1rem;
 }
-.cardFooter a {
+.card_Footer a {
   color: var(--color-primary);
 }
 

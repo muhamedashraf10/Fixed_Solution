@@ -6,7 +6,7 @@ const NotFound = () => {
   const navigate = useNavigate();
 
   return (
-    <section className={Styles.notfound}>
+    <section className={Styles.Not_found}>
       <h2>Oops!</h2>
       <img
         src="https://cdn-icons-png.flaticon.com/512/7465/7465751.png"

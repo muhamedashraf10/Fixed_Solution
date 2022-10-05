@@ -20,8 +20,8 @@ const Navbar = () => {
           </h1>
         </NavLink>
       </div>
-      <div className={Styles.linkNav}>
-        <ul className={showDropDown ? Styles.navlist : Styles.navlistNone}>
+      <div className={Styles.link_Nav}>
+        <ul className={showDropDown ? Styles.nav_list : Styles.nav_list_None}>
           <li>
             <NavLink
               to="/"
@@ -57,7 +57,7 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
-        <div className={Styles.hamburgerMenu}>
+        <div className={Styles.hamburger_Menu}>
           <GiHamburgerMenu onClick={() => setShowDropDown(!showDropDown)} />
         </div>
       </div>

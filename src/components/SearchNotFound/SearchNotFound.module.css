@@ -1,19 +1,19 @@
-.searchNotFound {
+.search_Not_Found {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.searchNotFound img {
+.search_Not_Found img {
   width: 16rem;
   height: 16rem;
 }
-.searchNotFound h3 {
+.search_Not_Found h3 {
   font-size: 2rem;
   color: var(--color-gray);
   margin-top: 1.6rem;
 }
-.searchNotFound h4 {
+.search_Not_Found h4 {
   font-size: 1rem;
   color: var(--color-light);
 }
@@ -21,17 +21,17 @@
 /* Responsive */
 
 @media screen and (max-width: 600px) {
-  .searchNotFound {
+  .search_Not_Found {
     margin-top: 6rem;
   }
-  .searchNotFound img {
+  .search_Not_Found img {
     width: 14rem;
     height: 14rem;
   }
-  .searchNotFound h3 {
+  .search_Not_Found h3 {
     font-size: 1rem;
   }
-  .searchNotFound h4 {
+  .search_Not_Found h4 {
     font-size: 0.8rem;
     text-align: center;
   }
