@@ -26,14 +26,15 @@
 }
 .notfound button {
   cursor: pointer;
-  background-color: var(--color-white);
+  background-color: transparent;
   border: 1px solid var(--color-primary);
   color: var(--color-primary);
-  padding: 1rem 3rem;
-  border-radius: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 1.1rem;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 0.9rem;
   transition: var(--transition);
+  margin-top: 1rem;
 }
 .notfound button:hover {
   background-color: var(--color-primary);
@@ -63,5 +64,9 @@
   .notfound h4 {
     text-align: center;
     font-size: 0.8rem;
+  }
+  .notfound button {
+    padding: 1rem 1.8rem;
+    background-color: var(--color-white);
   }
 }

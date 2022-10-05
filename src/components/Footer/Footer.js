@@ -37,24 +37,24 @@ const Footer = () => {
         </li>
       </ul>
       <div className={Styles.footersocial}>
-        <a href="https://www.facebook.com/elmagik.toshka" target="_blank">
+        <a href="https://www.facebook.com/elmagik.toshka" target="blank">
           <FaFacebookF />
         </a>
-        <a href="https://www.instagram.com/__muhamedashraf/" target="_blank">
+        <a href="https://www.instagram.com/__muhamedashraf/" target="blank">
           <FiInstagram />
         </a>
         <a
           href="https://www.linkedin.com/in/muhamed-ashraf-052a64242/"
-          target="_blank"
+          target="blank"
         >
           <FaLinkedinIn />
         </a>
-        <a href="https://github.com/muhamedashraf10" target="_blank">
+        <a href="https://github.com/muhamedashraf10" target="blank">
           <FiGithub />
         </a>
         <a
           href="https://www.youtube.com/channel/UCbK_dOMfj1Rbd92BSVKG-Hg"
-          target="_blank"
+          target="blank"
         >
           <FiYoutube />
         </a>

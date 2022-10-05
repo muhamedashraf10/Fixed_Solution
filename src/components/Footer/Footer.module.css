@@ -51,7 +51,9 @@ footer a {
 }
 .copy {
   margin-bottom: 4rem;
+  padding: 0.8rem 0;
   color: var(--color-light);
+  background-color: var(--color-bg);
 }
 
 /* responsive */

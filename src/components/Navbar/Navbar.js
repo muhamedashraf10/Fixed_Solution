@@ -1,10 +1,12 @@
-import React from "react";
-import { NavLink, useParams } from "react-router-dom";
+import React, { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import Styles from "./Navbar.module.css";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
-  const data = useParams();
-  console.log(data);
+  const location = useLocation();
+
+  const [showDropDown, setShowDropDown] = useState(false);
   return (
     <nav className={Styles.navbar}>
       <div className={Styles.title}>
@@ -15,12 +17,11 @@ const Navbar = () => {
         </NavLink>
       </div>
       <div className={Styles.linkNav}>
-        <ul className={Styles.navlist}>
+        <ul className={showDropDown ? Styles.navlist : Styles.navlistNone}>
           <li>
             <NavLink
-              exact
-              activeClassName={Styles.active}
               to="/"
+              className={location.pathname === "/" ? Styles.active : ""}
               // style={({ isActive }) => {
               //   return { color: isActive ? "#f8633b" : "#93a4b6" };
               // }}
@@ -31,7 +32,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/posts"
-              activeClassName={Styles.active}
+              className={location.pathname === "/posts" ? Styles.active : ""}
 
               // style={({ isActive }) => {
               //   return { color: isActive ? "#f8633b" : "#93a4b6" };
@@ -43,8 +44,7 @@ const Navbar = () => {
           <li>
             <NavLink
               to="/about"
-              activeClassName={Styles.active}
-
+              className={location.pathname === "/about" ? Styles.active : ""}
               // style={({ isActive }) => {
               //   return { color: isActive ? "#f8633b" : "#93a4b6" };
               // }}
@@ -53,6 +53,9 @@ const Navbar = () => {
             </NavLink>
           </li>
         </ul>
+        <div className={Styles.hamburgerMenu}>
+          <GiHamburgerMenu onClick={() => setShowDropDown(!showDropDown)} />
+        </div>
       </div>
     </nav>
   );
