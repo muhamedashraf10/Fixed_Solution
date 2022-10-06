@@ -12,7 +12,6 @@
   border: none;
   background-color: var(--color-white);
   margin-bottom: 2rem;
-  /* if useing library you should remove the height and transition */
   height: 36rem;
   transition: ease-out height 1.2s;
   width: 28rem;
@@ -159,6 +158,11 @@
   .bttn {
     padding: 0.9rem 1.9rem;
     font-size: 0.9rem;
+  }
+  .bttn:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
   }
   .more_Card_Body h4 {
     font-size: 0.7rem;
