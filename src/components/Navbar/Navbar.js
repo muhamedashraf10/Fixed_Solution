@@ -14,21 +14,24 @@ const Navbar = () => {
   return (
     <nav className={Styles.navbar}>
       <div className={Styles.title}>
-        <NavLink to={"/"}>
+        <NavLink to="/">
           <h1>
             FIXED<span>solution</span>
           </h1>
         </NavLink>
       </div>
-      <div className={Styles.link_Nav}>
-        <ul className={showDropDown ? Styles.nav_list : Styles.nav_list_None}>
+      <div className={Styles.navbar_content}>
+        <ul
+          className={
+            showDropDown
+              ? Styles.navbar_list_active
+              : Styles.navbar_list_notActive
+          }
+        >
           <li>
             <NavLink
               to="/"
               className={location.pathname === "/" ? Styles.active : ""}
-              // style={({ isActive }) => {
-              //   return { color: isActive ? "#f8633b" : "#93a4b6" };
-              // }}
             >
               Home
             </NavLink>
@@ -37,10 +40,6 @@ const Navbar = () => {
             <NavLink
               to="/contact"
               className={location.pathname === "/contact" ? Styles.active : ""}
-
-              // style={({ isActive }) => {
-              //   return { color: isActive ? "#f8633b" : "#93a4b6" };
-              // }}
             >
               Contact
             </NavLink>
@@ -49,9 +48,6 @@ const Navbar = () => {
             <NavLink
               to="/about"
               className={location.pathname === "/about" ? Styles.active : ""}
-              // style={({ isActive }) => {
-              //   return { color: isActive ? "#f8633b" : "#93a4b6" };
-              // }}
             >
               About
             </NavLink>

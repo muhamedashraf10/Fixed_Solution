@@ -33,7 +33,6 @@ const CardsOfPostsUser = ({ posts, user }) => {
             <h5>{user.name}</h5>
             <h6>{user.email}</h6>
           </div>
-
           <button
             onClick={() => setExpanded(!isExpanded)}
             className={Styles.bttn}

@@ -13,21 +13,21 @@
 .navbar span {
   color: var(--color-gray);
 }
-.nav_list,
-.nav_list_None {
+.navbar_list_active,
+.navbar_list_notActive {
   display: flex;
 }
-.nav_list li,
-.nav_list_None li {
+.navbar_list_active li,
+.navbar_list_notActive li {
   margin-inline: 1.75rem;
 }
-.nav_list li a,
-.nav_list_None li a {
+.navbar_list_active li a,
+.navbar_list_notActive li a {
   display: block;
   color: var(--color-gray);
 }
-.nav_list .active,
-.nav_list_None .active {
+.navbar_list_active .active,
+.navbar_list_notActive .active {
   color: var(--color-primary);
 }
 .hamburger_Menu {
@@ -43,15 +43,15 @@
   .navbar {
     padding: 1rem 3rem;
   }
-  .nav_list li,
-  .nav_list_None li {
+  .navbar_list_active li,
+  .navbar_list_notActive li {
     margin-inline: 1.75rem;
   }
   .navbar h1 {
     font-size: 1.4rem;
   }
-  .nav_list li a,
-  .nav_list_None li a {
+  .navbar_list_active li a,
+  .navbar_list_notActive li a {
     font-size: 0.9rem;
   }
 }
@@ -62,10 +62,10 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .nav_list {
+  .navbar_list_active {
     flex-direction: column;
   }
-  .link_Nav {
+  .navbar_content {
     width: 100%;
   }
   .hamburger_Menu {
@@ -74,17 +74,17 @@
     font-size: x-large;
     cursor: pointer;
   }
-  .nav_list li {
+  .navbar_list_active li {
     margin: 0.8rem 0 0.4rem 0;
     padding: 0.6rem 0;
   }
-  .nav_list li:hover {
+  .navbar_list_active li:hover {
     background-color: var(--color-bg);
   }
-  .nav_list li a {
+  .navbar_list_active li a {
     text-align: center;
   }
-  .nav_list_None {
+  .navbar_list_notActive {
     display: none;
   }
 }

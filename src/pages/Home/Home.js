@@ -17,8 +17,10 @@ import ErrorNetwork from "../../components/ErrorNetwork/ErrorNetwork";
 import CardsOfUsers from "../../components/CardsOfUsers/CardsOfUsers";
 
 const Home = () => {
-  const [users, setUsers] = useState("");
-  const [search, setSearch] = useState("");
+  const [users, setUsers] = useState([]);
+  const [search, setSearch] = useState([]);
+
+  console.log(users);
 
   function searchFilter(value) {
     const filterUsers = search.filter((p) => {
@@ -31,18 +33,15 @@ const Home = () => {
 
   async function fetchUsers() {
     const { data } = await INSTANCE.get("/users");
+    console.log(data);
     setSearch(data);
     setUsers(data);
     return data;
   }
 
-  const { isLoading, isError, error } = useQuery(
+  const { data, isLoading, isError, error, status } = useQuery(
     "users",
-    fetchUsers,
-
-    {
-      staleTime: 1000,
-    }
+    fetchUsers
   );
 
   if (isLoading) {
@@ -76,7 +75,7 @@ const Home = () => {
           </div>
         ) : (
           <div className={`${Styles.Users} container`}>
-            {users.map((user) => (
+            {data.map((user) => (
               <CardsOfUsers users={user} key={user.id} />
             ))}
           </div>
