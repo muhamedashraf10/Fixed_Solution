@@ -23,10 +23,7 @@ const Footer = () => {
           <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="/contact">Contact</a>
-        </li>
-        <li>
-          <a href="/services">Services</a>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
           <a href="https://my-portfolio-neon-six.vercel.app/" target="blank">
@@ -34,10 +31,10 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="/testimonials">Testimonials</a>
+          <Link to="/">Users</Link>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <Link to="/notfound">Not Found</Link>
         </li>
       </ul>
       <div className={Styles.footer_social}>
