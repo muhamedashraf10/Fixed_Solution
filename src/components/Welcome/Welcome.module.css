@@ -1,0 +1,28 @@
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome img {
+  width: 10rem;
+  height: 12rem;
+  margin-bottom: 4rem;
+}
+.welcome p {
+  color: var(--color-gray);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .welcome img {
+    width: 8rem;
+    height: 10rem;
+  }
+  .welcome p {
+    font-size: 1rem;
+    padding-inline: 1.5rem;
+  }
+}

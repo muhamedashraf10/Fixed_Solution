@@ -10,7 +10,7 @@ const ErrorNetwork = ({ errorUser, errorPost, error }) => {
   };
 
   return (
-    <div className={Styles.errorNeywork}>
+    <div className={Styles.error_Neywork}>
       <img
         src="https://cdn-icons-png.flaticon.com/512/6797/6797087.png"
         alt="404 Error"

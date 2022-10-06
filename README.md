@@ -22,8 +22,8 @@
 7. If the data is fullfilled ,it will appear to you all data
 8. If the data is rejected ,it will appear to you Error
 9. Search Bar
-   - If I didn't write something right, it will appear to you filter data
-   - If I didn't write something wrong, it will appear to you Error
+   - If I wrote something right, it will appear to you filter data
+   - If I didn't write something right, it will appear to you Error
 
 ### Uses
 

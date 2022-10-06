@@ -22,7 +22,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .scrollToUpBtton {
+  .scroll_To_Up_Btton {
     display: none;
   }
 }

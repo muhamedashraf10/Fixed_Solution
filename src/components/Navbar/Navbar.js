@@ -35,14 +35,14 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/posts"
-              className={location.pathname === "/posts" ? Styles.active : ""}
+              to="/contact"
+              className={location.pathname === "/contact" ? Styles.active : ""}
 
               // style={({ isActive }) => {
               //   return { color: isActive ? "#f8633b" : "#93a4b6" };
               // }}
             >
-              Posts
+              Contact
             </NavLink>
           </li>
           <li>

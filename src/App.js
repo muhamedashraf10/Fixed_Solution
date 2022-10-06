@@ -11,6 +11,7 @@ import About from "./pages/About/About";
 import NotFound from "./pages/NotFound/NotFound";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
+import Contact from "./pages/Contact/Contact";
 import ButtonToScrollUp from "./components/ButtonToScrollUp/ButtonToScrollUp";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ function App() {
           <Route path="post/:id" element={<Posts />} />
           <Route path="about" element={<About />} />
           <Route path="*" element={<NotFound />} />
+          <Route path="contact" element={<Contact />} />
         </Routes>
         <Footer />
         <ButtonToScrollUp />

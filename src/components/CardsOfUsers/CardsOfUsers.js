@@ -20,8 +20,8 @@ const CardsOfUsers = ({ users }) => {
       <div className={Styles.card}>
         <div className={Styles.content_Info}>
           <div className={Styles.icons}>
-            <HiMenuAlt1 className={Styles.menu} />
-            <AiFillSetting className={Styles.setting} />
+            <HiMenuAlt1 />
+            <AiFillSetting />
           </div>
           <img src={`./images/${users.id}.png`} alt="Users Profile" />
           <h3>{users.name}</h3>

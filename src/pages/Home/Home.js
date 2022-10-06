@@ -17,8 +17,8 @@ import ErrorNetwork from "../../components/ErrorNetwork/ErrorNetwork";
 import CardsOfUsers from "../../components/CardsOfUsers/CardsOfUsers";
 
 const Home = () => {
-  const [users, setUsers] = useState([]);
-  const [search, setSearch] = useState([]);
+  const [users, setUsers] = useState("");
+  const [search, setSearch] = useState("");
 
   function searchFilter(value) {
     const filterUsers = search.filter((p) => {
@@ -36,7 +36,14 @@ const Home = () => {
     return data;
   }
 
-  const { isLoading, isError, error } = useQuery("users", fetchUsers);
+  const { isLoading, isError, error } = useQuery(
+    "users",
+    fetchUsers,
+
+    {
+      staleTime: 1000,
+    }
+  );
 
   if (isLoading) {
     return (
