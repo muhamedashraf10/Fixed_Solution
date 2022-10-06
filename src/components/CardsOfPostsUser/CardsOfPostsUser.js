@@ -24,15 +24,6 @@ const CardsOfPostsUser = ({ posts, user }) => {
           <img src={`../images/${user.id}.png`} alt="User Profile" />
           <h2>{user.username}</h2>
           <h3>{posts.title}</h3>
-          <div
-            className={
-              isExpanded ? Styles.more_Card_Body : Styles.less_Card_Body
-            }
-          >
-            <h4>{posts.body}</h4>
-            <h5>{user.name}</h5>
-            <h6>{user.email}</h6>
-          </div>
           <button
             onClick={() => setExpanded(!isExpanded)}
             className={Styles.bttn}
@@ -44,6 +35,15 @@ const CardsOfPostsUser = ({ posts, user }) => {
               <BsArrowDown className={Styles.icon_Arrow} />
             )}
           </button>
+          <div
+            className={
+              isExpanded ? Styles.more_Card_Body : Styles.less_Card_Body
+            }
+          >
+            <h4>{posts.body}</h4>
+            <h5>{user.name}</h5>
+            <h6>{user.email}</h6>
+          </div>
         </div>
       </div>
     </article>

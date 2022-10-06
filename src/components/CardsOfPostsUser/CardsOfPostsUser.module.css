@@ -14,7 +14,7 @@
   margin-bottom: 2rem;
   /* if useing library you should remove the height and transition */
   height: 36rem;
-  transition: ease-out height 1s;
+  transition: ease-out height 1.2s;
   width: 28rem;
   border-radius: 1.8rem;
   padding: 1rem 2rem;
@@ -31,7 +31,8 @@
   border-radius: 1.8rem;
   padding: 1rem 2rem;
   box-shadow: 0 10px 25px rgba(134, 133, 132, 0.282);
-  transition: ease-out height 1s;
+  transition: ease-out height 1.2s;
+  transition-delay: 0.2s;
 }
 .icon_Menu {
   color: var(--color-primary);
@@ -97,7 +98,9 @@
   justify-content: center;
   align-items: center;
   margin-block: 1rem;
-  overflow: hidden;
+  visibility: visible;
+  transition: visibility 0.5s;
+  transition-delay: 1s;
 }
 
 .more_Card_Body h4 {
@@ -118,8 +121,8 @@
 }
 
 .less_Card_Body {
-  display: none;
-  overflow: hidden;
+  visibility: hidden;
+  transition: visibility 0s;
 }
 
 /* Responsive */
