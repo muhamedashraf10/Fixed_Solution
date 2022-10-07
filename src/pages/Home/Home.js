@@ -26,9 +26,7 @@ const Home = () => {
     setUsers(filterUsers);
   }
 
-  const { data, isLoading, isError, error, isFetched } = useGetAllUsers();
-  console.log(isFetched, "isfetch");
-  console.log(isLoading, "isloading");
+  const { data, isLoading, isError, error } = useGetAllUsers();
 
   useEffect(() => {
     if (data) {
