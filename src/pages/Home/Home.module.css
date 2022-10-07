@@ -1,6 +1,11 @@
 .Home {
   margin-top: 2rem;
 }
+
+.Error,
+.Loading {
+  margin-top: 8rem;
+}
 .searchBar {
   display: flex;
   justify-content: center;

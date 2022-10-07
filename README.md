@@ -6,12 +6,13 @@
 - cd myapp
 - npm start
 
-## Detatils about My Task
+## General info
 
 1. Structure
+
    - Folder Pages : Each page contains two files javascript and css module
    - Folder Components : Each component contains two files javascript and css module
-   - Folder Hooks : it contains useQuery
+   - Folder Hooks : it contains React Query Custom Hooks
    - File InstanceAxios : it contains axios instance
 
 2. Home page has all the users as cards in a grid view of three columns Every User card should show the required data in the Task.
@@ -22,10 +23,10 @@
 7. If the data is fullfilled ,it will appear to you all data
 8. If the data is rejected ,it will appear to you Error
 9. Search Bar
-   - If I wrote something right, it will appear to you filter data
-   - If I didn't write something right, it will appear to you Error
+   - If you write something right, filtered data will appear
+   - If you write something wrong, Error message will appear
 
-### Uses
+### Technologies
 
 - React js
 - axios **_ axios instance _**
@@ -33,6 +34,15 @@
 - React Query
 - Css **_ Media Query , Responsive Web _**
 - React Icon
+
+### Setup
+
+To run this project, install it locally using npm:
+
+```
+$ npm install
+$ npm start
+```
 
 ### Extra
 
@@ -44,4 +54,5 @@
 - Button Scroll To Up
 
 #### GitHub [https://github.com/muhamedashraf10/Fixed_Solution](https://github.com/muhamedashraf10/Fixed_Solution) .
+
 #### Vercel Deploy [https://fixedsolution.vercel.app/](https://fixedsolution.vercel.app/) .

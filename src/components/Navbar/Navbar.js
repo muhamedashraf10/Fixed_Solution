@@ -10,7 +10,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const location = useLocation();
 
-  const [showDropDown, setShowDropDown] = useState(false);
+  const [showDropDownMenu, setShowDropDownMenu] = useState(false);
+
   return (
     <nav className={Styles.navbar}>
       <div className={Styles.title}>
@@ -23,7 +24,7 @@ const Navbar = () => {
       <div className={Styles.navbar_content}>
         <ul
           className={
-            showDropDown
+            showDropDownMenu
               ? Styles.navbar_list_active
               : Styles.navbar_list_notActive
           }
@@ -54,7 +55,9 @@ const Navbar = () => {
           </li>
         </ul>
         <div className={Styles.hamburger_Menu}>
-          <GiHamburgerMenu onClick={() => setShowDropDown(!showDropDown)} />
+          <GiHamburgerMenu
+            onClick={() => setShowDropDownMenu(!showDropDownMenu)}
+          />
         </div>
       </div>
     </nav>

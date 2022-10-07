@@ -1,10 +1,16 @@
 import React from "react";
+
+// react router dom
 import { useParams } from "react-router-dom";
+
+// react query
+import { useGetPosts } from "../../hooks/useGetPosts";
+import { useGetSingleUser } from "../../hooks/useGetSingleUser";
+
+// component
 import CardsOfPostsUser from "../../components/CardsOfPostsUser/CardsOfPostsUser";
 import ErrorNetwork from "../../components/ErrorNetwork/ErrorNetwork";
 import Spinner from "../../components/Spinner/Spinner";
-import { useGetPosts } from "../../hooks/useGetPosts";
-import { useGetSingleUser } from "../../hooks/useGetSingleUser";
 
 const Posts = () => {
   const { id } = useParams();

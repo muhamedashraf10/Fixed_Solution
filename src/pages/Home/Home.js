@@ -35,43 +35,39 @@ const Home = () => {
     }
   }, [data]);
 
-  if (isLoading) {
-    return (
-      <section>
-        <Spinner />
-      </section>
-    );
-  }
-
-  if (isError) {
-    return (
-      <section>
-        <ErrorNetwork error={error?.message} />
-      </section>
-    );
-  }
-
   return (
     <section className={Styles.Home}>
-      <div className={Styles.searchBar}>
-        <SearchBar searchFilter={searchFilter} />
-      </div>
-      <h5>Task Of</h5>
-      <h2>Get Users</h2>
+      {isLoading ? (
+        <div className={Styles.Loading}>
+          <Spinner />
+        </div>
+      ) : isError ? (
+        <div className={Styles.Error}>
+          <ErrorNetwork error={error?.message} />
+        </div>
+      ) : data ? (
+        <>
+          <div className={Styles.searchBar}>
+            <SearchBar searchFilter={searchFilter} />
+          </div>
+          <h5>Task Of</h5>
+          <h2>Get Users</h2>
 
-      <>
-        {users.length === 0 ? (
-          <div className="container">
-            <SearchNotFound />
-          </div>
-        ) : (
-          <div className={`${Styles.Users} container`}>
-            {data.map((user) => (
-              <CardsOfUsers users={user} key={user.id} />
-            ))}
-          </div>
-        )}
-      </>
+          <>
+            {users.length === 0 ? (
+              <div className="container">
+                <SearchNotFound />
+              </div>
+            ) : (
+              <div className={`${Styles.Users} container`}>
+                {data.map((user) => (
+                  <CardsOfUsers users={user} key={user.id} />
+                ))}
+              </div>
+            )}
+          </>
+        </>
+      ) : null}
     </section>
   );
 };
