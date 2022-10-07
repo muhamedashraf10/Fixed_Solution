@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-
-// instance axios
-import { INSTANCE } from "../../InstanceAxios";
+import React, { useEffect, useState } from "react";
 
 // react query
-import { useQuery } from "react-query";
+import { useGetAllUsers } from "../../hooks/useGetAllUsers";
 
 // css module
 import Styles from "./Home.module.css";
@@ -20,8 +17,6 @@ const Home = () => {
   const [users, setUsers] = useState([]);
   const [search, setSearch] = useState([]);
 
-  console.log(users);
-
   function searchFilter(value) {
     const filterUsers = search.filter((p) => {
       let itemLowerCase = p.name.toLowerCase();
@@ -31,18 +26,16 @@ const Home = () => {
     setUsers(filterUsers);
   }
 
-  async function fetchUsers() {
-    const { data } = await INSTANCE.get("/users");
-    console.log(data);
-    setSearch(data);
-    setUsers(data);
-    return data;
-  }
+  const { data, isLoading, isError, error, isFetched } = useGetAllUsers();
+  console.log(isFetched, "isfetch");
+  console.log(isLoading, "isloading");
 
-  const { data, isLoading, isError, error, status } = useQuery(
-    "users",
-    fetchUsers
-  );
+  useEffect(() => {
+    if (data) {
+      setSearch(data);
+      setUsers(data);
+    }
+  }, [data]);
 
   if (isLoading) {
     return (

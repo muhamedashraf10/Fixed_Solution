@@ -1,8 +1,6 @@
 import React from "react";
 import Welcome from "../../components/Welcome/Welcome";
 
-// import Styles from "./About.module.css";
-
 const About = () => {
   return (
     <section>
