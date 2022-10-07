@@ -58,8 +58,8 @@ const Home = () => {
       <div className={Styles.searchBar}>
         <SearchBar searchFilter={searchFilter} />
       </div>
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+      <h5>Task Of</h5>
+      <h2>Get Users</h2>
 
       <>
         {users.length === 0 ? (
