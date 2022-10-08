@@ -60,7 +60,7 @@ const Home = () => {
               </div>
             ) : (
               <div className={`${Styles.Users} container`}>
-                {data.map((user) => (
+                {users.map((user) => (
                   <CardsOfUsers users={user} key={user.id} />
                 ))}
               </div>
